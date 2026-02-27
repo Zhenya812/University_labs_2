@@ -1,0 +1,2 @@
+const generator = NumbersGenerator(10, 39);
+Timeout(generator, 8);
