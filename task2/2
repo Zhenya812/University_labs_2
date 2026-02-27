@@ -1,0 +1,13 @@
+async function Timeout(iterator, timeoutSeconds) {
+    const startTime = Date.now();
+    const timeoutMs = timeoutSeconds * 1000;
+
+    for (const value of iterator) {
+        console.log(value);
+
+        if (Date.now() - startTime >= timeoutMs) {
+            console.log("Час закінчився. Зупинка генерації");
+            break;
+        }
+}
+}
