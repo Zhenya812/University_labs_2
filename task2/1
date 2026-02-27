@@ -1,0 +1,5 @@
+function* NumbersGenerator(min = 0, max = 70) {
+    while (true) {
+        yield Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+}
